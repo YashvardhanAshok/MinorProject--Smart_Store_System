@@ -1,0 +1,13 @@
+{
+  "liveServer.settings.port": 5320,
+  "remote.portAttributes": {
+    "3000": {
+      "label": "Public Port 3000",
+      "onAutoForward": "openPreview"
+    },
+    "5320": {
+      "label": "Public Port 5320",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
