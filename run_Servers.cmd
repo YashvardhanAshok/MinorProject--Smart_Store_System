@@ -1,7 +1,7 @@
-@REM @REM React 
+@REM For React 
 @REM cd Front_End\React
 @REM npm start
 
-@REM rails 
+@REM For Ruby On Rails 
 @REM cd Front_End\Ruby_on_rails(FrontEnd)
 @REM rails server

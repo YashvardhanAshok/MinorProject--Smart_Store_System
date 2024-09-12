@@ -40,8 +40,12 @@ Ensure you have the following installed:
 - Node.js (optional for frontend management)
 
 ### Steps
+1. **Requirement**:<br>
+   Download this library 
+   ```bash
+   pip install torch torchvision pillow opencv-python yolov5
 
-1. **Clone the Repository**:
+2. **Clone the Repository**:
    ```bash
    git clone https://github.com/YOUR_USERNAME/smart-store-system.git
    cd smart-store-system
