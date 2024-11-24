@@ -1,0 +1,70 @@
+{
+    "items": [
+        {
+            "name": "Apple",
+            "quantity": 10,
+            "expiry_date": "2024-12-01",
+            "location": "Aisle 5"
+        },
+        {
+            "name": "Apple",
+            "quantity": 5,
+            "expiry_date": "2024-12-10",
+            "location": "Aisle 6"
+        },
+        {
+            "name": "Banana",
+            "quantity": 6,
+            "expiry_date": "2024-11-15",
+            "location": "Aisle 2"
+        },
+        {
+            "name": "Banana",
+            "quantity": 8,
+            "expiry_date": "2024-11-20",
+            "location": "Aisle 2"
+        },
+        {
+            "name": "Milk",
+            "quantity": 3,
+            "expiry_date": "2024-11-12",
+            "location": "Refrigerated Section"
+        },
+        {
+            "name": "Milk",
+            "quantity": 4,
+            "expiry_date": "2024-11-14",
+            "location": "Refrigerated Section"
+        },
+        {
+            "name": "Orange",
+            "quantity": 12,
+            "expiry_date": "2024-12-05",
+            "location": "Aisle 3"
+        },
+        {
+            "name": "Orange",
+            "quantity": 6,
+            "expiry_date": "2024-12-07",
+            "location": "Aisle 3"
+        },
+        {
+            "name": "Bread",
+            "quantity": 5,
+            "expiry_date": "2024-11-10",
+            "location": "Aisle 1"
+        },
+        {
+            "name": "Bread",
+            "quantity": 3,
+            "expiry_date": "2024-11-12",
+            "location": "Aisle 1"
+        },
+        {
+            "name": "Apple",
+            "quantity": 15,
+            "expiry_date": "2024-12-05",
+            "location": "1"
+        }
+    ]
+}
