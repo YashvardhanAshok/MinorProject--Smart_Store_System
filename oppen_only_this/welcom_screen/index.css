@@ -24,6 +24,7 @@ body{
   padding: 0;
   background-color: var(--background_color);
   font-family:Arial, Helvetica;
+  overflow: hidden;
 
 }
 
@@ -128,16 +129,32 @@ body{
   max-width: 100%; /* Prevent any item from exceeding the full width */
 }
 
+.profile.active .profile_imge {
+    transform: scale(100);
+    z-index: 1;
+}
+
+
 .profile_imge{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 90px;
+font-weight: bolder;
+  transition: 4s ;
+
+
   position: relative;
   width: 90px;
   height: 90px;
   border-radius: 100px;
-  background-color:white;
+  background-color:var(--them_color);
 }
 
 .profile_name{
   margin: 10px 0;
+  margin-bottom: 20px;
+
   text-align: center;
 
 }
