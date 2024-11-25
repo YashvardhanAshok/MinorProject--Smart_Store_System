@@ -28,6 +28,7 @@ body{
 }
 
 
+
 /* nav */
 .nav{
   position: relative;
@@ -55,37 +56,120 @@ body{
     font-size: 35px;
     font-weight: bold;
     color: var(--nav_text);
-
+  z-index: 2;
 }
 
 
 .options{
-    position: relative;
-    height: 45px;
-    width: 45px;
-    border-radius: 100%;
-    background-color: var(--them_color);
-}
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  margin: 7.5px 15.4px;
 
-#shu{
-  position: relative;
-  width: 40%;
-  border-radius: 5px;
-  height: 50px;
-  padding:0 10px;
-}
+  height: 45px;
+  width: 48px;
+  border-radius: 100%;
+  background-color: var(--them_color);
 
-.drecter_line{
-  position: relative;
-  display: flex;
-  padding: 15px 0;
-  width: 50%;
-  margin: auto;
-
-  justify-content: space-between;
+  padding-top:3px ;
+  padding-bottom:-3px ;
+  color: rgba(0, 0, 0, 0.676);
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
   align-items: center;
-  font-weight: 600;
+  display: flex;
+  line-height: 0;
+  justify-content: center;
+  transition: 1s ease-in-out;
+
+  z-index: 1;
 }
+
+
+.options.active{
+  transform: scale(50);
+
+}
+
+.option_list a{
+  display: block;
+  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+
+}
+
+
+.option_list,.option_close{
+  display: none;
+}
+
+.option_list.active{
+  display: block;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  border-top: 3PX solid rgba(255, 255, 255, 0.686);
+  border-bottom: 3PX solid rgba(255, 255, 255, 0.686);
+  padding: 30px;
+
+  z-index: 1;
+  width: 60%;
+  text-align: center;
+
+}
+
+.option_close.active{
+  background-color: var(--background_color);
+  position: absolute;
+right: 0%;
+  top: 0%;
+  margin: 10px 18px;
+  font-size: 16px;
+  height: 3px;
+  width: 3px;
+
+  color: white;
+
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.option_leter{
+  background-color: var(--background_color);
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  margin: 10px 18px;
+  font-size: 20px;
+  height: 3px;
+  width: 3px;
+
+  color: white;
+
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+
+  border-radius: 100px;
+  z-index: 2;
+}
+
+
 /* nav end */
 
 /* body */
@@ -364,6 +448,7 @@ td{
   height: 7vh;
   max-height: 50px;
   width: 100%;
+  max-width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -397,7 +482,9 @@ transition: 0.3s ease-in-out;
 
 }
 
-
+.book_button_bar.active{
+  background-color: var(--them_color);
+}
 .book_button_bar.active .book_button{
   max-height: 100%;
   z-index: 1;
@@ -405,4 +492,205 @@ transition: 0.3s ease-in-out;
   border-radius: 0;
   width: 100%;
 
+}
+
+
+/* payment */
+.payment.active{
+  display: block;
+  opacity: 1;  
+  animation: opacity 1.5s ;
+  
+}
+
+@keyframes  opacity {
+  0%{opacity: 0;}
+  75%{opacity: 0;}
+  to{opacity: 1;}  
+}
+
+.payment{
+  transition: opacity 1s ease-in-out;
+  opacity: 0;  
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  display: none;
+
+}
+
+.nfc,.Check_Out_At_Cashier{
+  position: relative;
+  height: 200px;
+  width: 300px;
+  background-color: var(--background_color);
+  border-radius: 25px;
+  margin: 10px;
+}
+
+/* nfc */
+
+.cube{
+  position: absolute;
+  /* height: 60px; */
+  width: 100px;
+  font-weight: bolder;
+  color: rgb(255, 255, 0);
+  font-size: 20px;
+
+  top: 0;
+  left: 0;
+  margin: 25px;
+
+  /* background-color: rgb(255, 255, 255); */
+  border-radius: 10px;
+}
+
+.cir1{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+
+  top: 0;
+  right: 0;
+  margin: 20px;
+
+  background-color: orange;
+  border-radius: 100%;
+  animation: lefttoright_cir1 2.5s infinite ease-in-out;
+}
+
+@keyframes  lefttoright_cir1 {
+  0%{margin: 20px;}  
+  50%{margin: 20px 60px;}
+  100%{margin: 20px;}  
+}
+
+.book_button_bar.active{
+padding-bottom: 230px;
+}
+
+
+.cir2{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+
+  top: 0;
+  right: 0;
+  margin: 20px 60px;
+
+  background-color: yellow;
+  border-radius: 100%;
+  animation: lefttoright_cir2 2.5s infinite ease-in-out;
+}
+
+@keyframes  lefttoright_cir2 {
+  0%{margin: 20px 60px;}  
+  50%{margin: 20px;}
+  100%{margin: 20px 60px;}  
+}
+
+
+
+.nfc_boder_cu{
+  position: absolute;
+
+  width: 250px;
+  height: 10px;
+  overflow: hidden;
+
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.nfc_boder{
+  
+  width: 2050px;
+  border-bottom: 5px dashed gray;
+  animation: lefttoright 30s infinite ;
+}
+
+@keyframes  lefttoright {
+  from{transform: translate(-60%,0);}
+  to{transform: translate(0,0%);}  
+}
+
+.text-1_nfc{
+  position: absolute;
+
+  width: 100px;
+  height: 10px;
+  background-color: rgba(128, 128, 128, 0.544);
+
+  top: 80%;
+  left: 24.8%;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+}
+
+.text-2_nfc{
+  position: absolute;
+
+  width: 50px;
+  height: 10px;
+  background-color: rgba(128, 128, 128, 0.544);
+
+  top: 86%;
+  left: 16.4%;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+}
+
+
+/* Check_Out_At_Cashier */
+.Check_Out_At_Cashier .cube{
+  width: 150px;
+  color: rgb(2, 194, 2);
+}
+
+#qrcode_cu{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+
+  top: 0;
+  right: 0;
+  margin: 20px;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.qrline{
+    position: absolute;
+  height: 5px;
+  width: 80px;
+
+  top: 0;
+  right: 0;
+  margin: 23px 15px;
+
+  background-color: rgb(0, 195, 255);
+  box-shadow:0 0 20px 5px rgb(0, 195, 255);
+  border-radius: 10px;
+
+  animation: up_and_down 2.5s infinite ease-in-out;
+}
+
+@keyframes  up_and_down {
+  0%{margin: 23px 15px;}  
+  50%{margin: 85px 15px;}
+  100%{margin: 23px 15px;}  
 }

@@ -1,3 +1,42 @@
+// Option functionality
+document.querySelector('.option_leter').addEventListener('click', function () {
+    document.querySelector('.options').classList.add('active');
+    document.querySelectorAll('.option_close').forEach(optionClose => {
+        optionClose.classList.add('active');
+    });
+    document.querySelectorAll('.option_list').forEach(optionList => {
+        optionList.classList.add('active');
+    });
+});
+
+document.querySelector('.options').addEventListener('click', function () {
+    this.classList.add('active');
+    document.querySelectorAll('.option_close').forEach(optionClose => {
+        optionClose.classList.add('active');
+    });
+
+    
+
+
+    document.querySelectorAll('.option_list').forEach(optionList => {
+        optionList.classList.add('active');
+    });
+});
+document.querySelector('.option_close').addEventListener('click', function () {
+    document.querySelector('.options').classList.remove('active');
+    document.querySelectorAll('.option_close').forEach(optionClose => {
+        optionClose.classList.remove('active');
+    });
+    document.querySelectorAll('.option_list').forEach(optionList => {
+                setTimeout(() => {
+        optionList.classList.remove('active');
+        }, 1000); 
+    });
+});
+
+// optin end
+
+
 
 
 document.querySelector('.bill').addEventListener('click', function() {
@@ -10,6 +49,8 @@ document.querySelector('.bill_summary_box_close').addEventListener('click', func
 
 document.querySelector('.book_button').addEventListener('click', function() {
     document.querySelector('.book_button_bar').classList.add('active');    
+    document.querySelector('.payment').classList.add('active');    
+    // document.querySelector('.book_button').innerHTML = "";    
 
 });
 
@@ -102,3 +143,31 @@ fetch('../assets/json/cart.json')
     .catch(error => {
         console.error('Error loading JSON data:', error); // Log error if any
     });
+    
+
+// qr
+            function generateQRCode() {
+            const qrCodeContainer = document.getElementById("qrcode");
+
+            // Clear any existing QR Code
+            qrCodeContainer.innerHTML = "";
+
+            // Define the values
+            const data = {
+                name: "yash",
+                email: "yashvardhan577@gmail.com",
+                customer_id: "10"
+            };
+
+            // Convert the data to a JSON string
+            const jsonData = JSON.stringify(data);
+
+            // Generate the QR code
+            new QRCode(qrCodeContainer, {
+                text: jsonData,
+                width: 60,
+                height: 60,
+            });
+}
+        
+generateQRCode()

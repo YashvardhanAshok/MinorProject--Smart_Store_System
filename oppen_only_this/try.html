@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Tilt on Y-Axis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #output {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Y-Axis Tilt Reading</h1>
+  <p id="output">Tilt your phone!</p>
+
+  <script>
+    // Check if DeviceOrientationEvent is supported
+    if (window.DeviceOrientationEvent) {
+      window.addEventListener("deviceorientation", (event) => {
+        // `beta` represents the tilt on the Y-axis
+        const yTilt = event.beta;
+
+        // Display the Y-axis tilt
+        document.getElementById("output").textContent = `Y-Axis Tilt: ${yTilt.toFixed(2)}°`;
+      });
+    } else {
+      document.getElementById("output").textContent = "DeviceOrientation is not supported on this device.";
+    }
+  </script>
+</body>
+</html>

@@ -5,9 +5,10 @@
     <title>Liora</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+
 </head>
 
 <body>
@@ -22,10 +23,23 @@
             </div>
 
 
-            <div class="options"></div>
+
         </div>
 
+
+
+
     </div>
+    <div class="options"></div>
+    <div class="option_list">
+        <a href="">HOME</a><br><br>
+        <a href="">ABOUT US</a><br><br>
+        <a href="">CART</a><br><br>
+        <a href="">LOGOUT</a>
+    </div>
+    <div class="option_leter"><b>Y</b></div>
+    <div class="option_close"><b>X</b></div>
+
 
 
     <div class="mid_cuntaner">
@@ -40,7 +54,8 @@
         </div>
 
         <div class="bill">
-            <div class="bill_text"> <b> Total bill - ₹<div id="total_price"></div></b> <br> Incl. taxes and charges </div>
+            <div class="bill_text"> <b> Total bill - ₹<div id="total_price"></div></b> <br> Incl. taxes and charges
+            </div>
             <div class="bill_text1"><b>></b></div>
 
         </div>
@@ -84,9 +99,49 @@
 
 
     <div class="book_button_bar">
-        <div class="book_button">
+        <div class="book_button ">
             PROCEED TO PAY
+
         </div>
+    </div>
+
+
+    <div class="payment ">
+
+        <div class="nfc">
+            <div class="cube">
+                TAP AND PAY
+            </div>
+            <div class="cir1"></div>
+            <div class="cir2"></div>
+            <div class="nfc_boder_cu">
+                <div class="nfc_boder"></div>
+            </div>
+            <div class="text-1_nfc"></div>
+            <div class="text-2_nfc"></div>
+        </div>
+
+        <div class="Check_Out_At_Cashier">
+            <div class="cube">
+                CHECK OUT AT CASHIER
+            </div>
+
+
+            <div class="text-1_nfc"></div>
+            <div class="text-2_nfc"></div>
+
+            <div id="qrcode_cu">
+                <div id="qrcode"></div>
+            </div>
+<!-- 
+            <div class="nfc_boder_cu">
+                <div class="nfc_boder"></div>
+            </div> -->
+
+            <div class="qrline"></div>
+        </div>
+
+
     </div>
 
     <script src='index.js'></script>
