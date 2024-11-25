@@ -1,0 +1,16 @@
+[
+  {
+    "item": "Apple",
+    "price_per_piece": "80",
+    "quantity": "100",
+    "expiry": "2024-12-15",
+    "Date_of_manufacture": "2024-11-10"
+  },
+  {
+    "item": "Banana",
+    "price_per_piece": "20",
+    "quantity": "150",
+    "expiry": "2024-11-30",
+    "Date_of_manufacture": "2024-11-05"
+  }
+]

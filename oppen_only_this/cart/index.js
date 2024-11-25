@@ -17,7 +17,7 @@ document.querySelector('.book_button').addEventListener('click', function() {
 
 
 
-fetch('./assets/json/cart.json')
+fetch('../assets/json/cart.json')
     
     .then(response => response.json())  // Parse JSON data
     .then(items => {
@@ -33,7 +33,9 @@ fetch('./assets/json/cart.json')
 
             itemContainer.innerHTML += `
                 <div class="item_box">
-                    <div class="item_img"></div>
+                    <div class="item_img">
+                        <img src="../assets/images/${item.item}.png" alt="Girl in a jacket" width="100%" height="100%">
+                    </div>
                     <div class="item_text">
                         <div class="information">!</div>
                         <b>${item.item}</b>

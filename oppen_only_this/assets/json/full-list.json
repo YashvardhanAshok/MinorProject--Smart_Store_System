@@ -1,0 +1,128 @@
+[
+  {
+    "item": "Apple",
+    "price_per_piece": "80",
+    "quantity": "100",
+    "expiry": "2024-12-15",
+    "Date_of_manufacture": "2024-11-10"
+  },
+  {
+    "item": "Banana",
+    "price_per_piece": "20",
+    "quantity": "150",
+    "expiry": "2024-11-30",
+    "Date_of_manufacture": "2024-11-05"
+  },
+  {
+    "item": "Carrot",
+    "price_per_piece": "30",
+    "quantity": "80",
+    "expiry": "2024-12-01",
+    "Date_of_manufacture": "2024-11-12"
+  },
+  {
+    "item": "Tomato",
+    "price_per_piece": "40",
+    "quantity": "120",
+    "expiry": "2024-11-25",
+    "Date_of_manufacture": "2024-11-10"
+  },
+  {
+    "item": "Cucumber",
+    "price_per_piece": "25",
+    "quantity": "110",
+    "expiry": "2024-12-05",
+    "Date_of_manufacture": "2024-11-15"
+  },
+  {
+    "item": "Lettuce",
+    "price_per_piece": "50",
+    "quantity": "70",
+    "expiry": "2024-11-28",
+    "Date_of_manufacture": "2024-11-10"
+  },
+  {
+    "item": "Potato",
+    "price_per_piece": "20",
+    "quantity": "200",
+    "expiry": "2025-01-10",
+    "Date_of_manufacture": "2024-10-30"
+  },
+  {
+    "item": "Onion",
+    "price_per_piece": "25",
+    "quantity": "150",
+    "expiry": "2025-02-20",
+    "Date_of_manufacture": "2024-10-25"
+  },
+  {
+    "item": "Garlic",
+    "price_per_piece": "10",
+    "quantity": "300",
+    "expiry": "2025-03-15",
+    "Date_of_manufacture": "2024-09-05"
+  },
+  {
+    "item": "Ginger",
+    "price_per_piece": "60",
+    "quantity": "100",
+    "expiry": "2025-01-30",
+    "Date_of_manufacture": "2024-10-10"
+  },
+  {
+    "item": "Milk",
+    "price_per_piece": "45",
+    "quantity": "200",
+    "expiry": "2024-11-28",
+    "Date_of_manufacture": "2024-11-05"
+  },
+  {
+    "item": "Cheese",
+    "price_per_piece": "180",
+    "quantity": "60",
+    "expiry": "2025-02-10",
+    "Date_of_manufacture": "2024-10-18"
+  },
+  {
+    "item": "Butter",
+    "price_per_piece": "120",
+    "quantity": "70",
+    "expiry": "2025-03-05",
+    "Date_of_manufacture": "2024-09-30"
+  },
+  {
+    "item": "Yogurt",
+    "price_per_piece": "50",
+    "quantity": "150",
+    "expiry": "2024-12-05",
+    "Date_of_manufacture": "2024-11-15"
+  },
+  {
+    "item": "Bread",
+    "price_per_piece": "35",
+    "quantity": "100",
+    "expiry": "2024-11-20",
+    "Date_of_manufacture": "2024-11-05"
+  },
+  {
+    "item": "Rice",
+    "price_per_piece": "90",
+    "quantity": "50",
+    "expiry": "2025-06-15",
+    "Date_of_manufacture": "2024-08-30"
+  },
+  {
+    "item": "Pasta",
+    "price_per_piece": "70",
+    "quantity": "60",
+    "expiry": "2025-07-10",
+    "Date_of_manufacture": "2024-09-10"
+  },
+  {
+    "item": "Cereal",
+    "price_per_piece": "150",
+    "quantity": "40",
+    "expiry": "2025-01-25",
+    "Date_of_manufacture": "2024-10-10"
+  }
+]

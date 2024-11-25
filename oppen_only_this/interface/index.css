@@ -1,0 +1,284 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
+
+:root {
+  /* back */
+  --background_color: rgb(22, 24, 29);
+  --them_box:black;
+  --them_box_text:white;
+
+  --nav_text:white;
+
+  --them_color:rgb(250, 78, 106);
+
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--background_color);
+  font-family:Arial, Helvetica;
+
+}
+
+
+/* nav */
+.nav{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.in_nav{
+    padding: 15px 0px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.logo{
+    position: relative;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--nav_text);
+
+}
+
+
+.options{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-color: var(--them_color);
+}
+
+#shu{
+  position: relative;
+  width: 40%;
+  border-radius: 5px;
+  height: 50px;
+  padding:0 10px;
+}
+
+.drecter_line{
+  position: relative;
+  display: flex;
+  padding: 15px 0;
+  width: 50%;
+  margin: auto;
+
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+/* nav end */
+
+/* mid_body */
+.mid_body{
+width: 92%;
+margin: auto;
+overflow: auto;
+height: 100%;
+}
+
+.mid_body h1{
+  color: white;
+  margin: 0;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: rgba(255, 255, 255, 0.371) 1px solid;
+}
+
+.mid_body h2{
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.631);
+  margin: 0;
+
+}
+
+.listcontaner{
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 10px 0;
+  /* background-color: rgb(0, 0, 0); */
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.listcontaner > * {
+  flex: 1 1 45%; /* This allows items to take up 45% of the width, leaving space for 2 items per row */
+  max-width: 45%;  /* Ensures items don’t stretch too much */
+  margin: 5px; /* Optional: for spacing between items */
+}
+
+
+.item_box{
+  margin: 5px; /* Optional: for spacing between items */
+  overflow: hidden;
+  position: relative;
+  width: 140px;
+  /* height: 170px; */
+  margin: auto;
+
+  min-height: 10px;
+  margin: auto;
+
+  background-color: rgba(255, 255, 255, 0.894);
+  border-bottom: 1px;
+  padding:5px 5px;
+  padding-bottom:10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.item_img{
+
+  position: relative;
+  margin: auto;
+  background-color: black;
+  margin-top: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  
+}
+
+.item_text{
+  position: relative;
+  width: calc(100% - 75px);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+
+  }
+
+.item_text pre{
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+
+.information{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 1px;
+  height: 1px;
+  border-radius: 100%;
+
+  background-color: rgb(51, 55, 67);
+
+
+  font-size: 16px;
+
+  color: white;
+
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+/* cart */
+.cart_button_bar{
+  bottom: 5px;
+  padding: 10px 0;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: fixed;
+  height: 8vh;
+  max-height: 60px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background_color);
+  transition: 0.3s ease-in-out;
+}
+
+.iner_calss_cart_but{
+  position: relative;
+  
+  height: 7vh;
+  max-height: 50px;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background_color);
+  transition: 0.3s ease-in-out;
+  gap: 10px;
+
+}
+
+.cart_button{
+  height: 100%;
+  width: calc(100%  - 10px);
+  border-radius: 15px;
+  padding: 5px 0;
+
+  font-size: 20px;
+  background-color: var(--them_color);
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cart_show{
+  
+  text-align: left;
+  height: 100%;
+  text-wrap: nowrap;
+  border-radius: 15px;
+
+  font-size: 20px;
+  background-color: var(--them_color);
+
+  display: flex;
+  padding:5px 20px;
+  align-items: center;
+}
+
+
+
+
