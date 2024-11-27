@@ -694,3 +694,15 @@ padding-bottom: 230px;
   50%{margin: 85px 15px;}
   100%{margin: 23px 15px;}  
 }
+
+.nfc.active,.Check_Out_At_Cashier.active{
+  transform: scale(100);
+  z-index: 1;
+  transition: 1s ease-in-out ;
+}
+
+.nav,.option_leter,.options{
+  z-index: 100;
+
+
+}

@@ -171,3 +171,35 @@ fetch('../assets/json/cart.json')
 }
         
 generateQRCode()
+
+
+
+    // pay
+    
+
+
+
+
+
+    document.querySelector('.nfc').addEventListener('click', function () {
+
+        document.querySelector('.nfc').classList.add('active');
+
+        setTimeout(() => {
+            window.location.href = '../pay2/';
+        }, 2000); 
+    });
+
+    document.querySelector('.Check_Out_At_Cashier').addEventListener('click', function () {
+
+        document.querySelector('.Check_Out_At_Cashier').classList.add('active');
+
+        setTimeout(() => {
+            window.location.href = '../pay/';
+        }, 2000); 
+    });
+
+
+
+
+
