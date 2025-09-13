@@ -27,10 +27,10 @@ The Smart Store System is built around three key components:
 
 <p align="center">
  
-  <img src="Document's/image-removebg-preview.png" width="200">
-  <img src="Document's/image-removebg-preview (1).png" width="200">
+  <img src="Document's/image-removebg-preview.png" width="198">
+  <img src="Document's/image-removebg-preview (1).png" width="205">
   <img src="Document's/image-removebg-preview (2).png" width="200">
-  <img src="Document's/image-removebg-preview (3).png" width="200">
+  <img src="Document's/image-removebg-preview (3).png" width="190">
 </p>
 
 
